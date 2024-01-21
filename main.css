@@ -1,0 +1,279 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+:root {
+    --orange: #ffd68a;
+    --bg: #2b2b37;
+    scroll-behavior: smooth;
+}
+
+::selection {
+    color: black;
+    font-weight: 700;
+    background: var(--orange);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    outline: none;
+    border: none;
+    border-radius: 0.2em;
+}
+
+body {
+    background-color: #27272d;
+}
+
+.page {
+    padding: 0 3em;
+}
+
+h1,
+h2 {
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    color: black;
+    cursor: pointer;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    font-size: large;
+    box-shadow: 5px 6px 0 0 #000;
+    transition: 0.3s;
+    font-weight: 500;
+    border-color: #ddd;
+    border-width: 1px;
+    background-color: var(--orange);
+}
+
+.btn:not(.fb):hover,
+.sel {
+    transform: translate(2px, 2px);
+    background-color: #ffbf8e;
+    box-shadow: 3px 3px 0 0 #000;
+}
+
+.sel {
+    background-color: #dcffb8;
+}
+
+#page1 {
+    height: 100dvh;
+}
+
+#page1 > header {
+    margin: 1.2em 5em 0.8em 5em;
+    height: 20dvh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#page1 > header > a > h1 {
+    font-weight: 600;
+    font-size: xx-large;
+    color: var(--orange);
+}
+
+#page1 > header > span > a {
+    margin: 0 0.5em;
+}
+
+#first {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#first > h1 {
+    max-width: 80%;
+    padding: 0 1.5em 0.5em 1.5em;
+    text-align: center;
+    font-size: 4em;
+    font-weight: 400;
+}
+#first > h2 {
+    text-align: center;
+    padding: 0.3em;
+    font-size: x-large;
+    font-weight: 400;
+}
+
+#first > div {
+    padding: 0.3em;
+}
+
+#first > div > a > button {
+    margin: 4em 5em;
+}
+
+#page2 {
+    height: 100dvh;
+    padding: 8em 8em;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#left > h1 {
+    font-size: x-large;
+    font-weight: 400;
+    color: var(--orange);
+}
+
+#left {
+    margin-right: 2em;
+}
+
+#left > h2 {
+    max-width: 6em;
+    margin: 1.2em 0;
+    text-align: center;
+    font-size: 3.5em;
+    font-weight: 400;
+}
+
+#left > div {
+    text-align: right;
+}
+
+#right {
+    margin: 8em 0 0 5em;
+}
+
+#right > div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#right > div > * {
+    color: #fff;
+    background-color: var(--bg);
+    width: 45%;
+    border: 1px solid;
+    color: var(--orange) !important;
+}
+
+#type {
+    padding: 1em;
+    background-color: var(--bg);
+}
+#stipend {
+    padding: 1em;
+}
+
+option:hover {
+    background: var(--bg) !important;
+    margin: 0.3em;
+}
+
+#right > textarea {
+    color: var(--orange) !important;
+    background-color: var(--bg);
+    color: #fff;
+    margin: 2em 0;
+    padding: 1em;
+    resize: none;
+    overflow-y: scroll;
+    width: 100%;
+    border: 1px solid;
+}
+
+#right > textarea::-webkit-scrollbar {
+    display: none;
+}
+
+#right > textarea::-moz-scrollbar {
+    display: none;
+}
+
+#page3 {
+    height: 100dvh;
+    padding: 5em 2em;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#right2 {
+    text-align: end;
+}
+
+#right2 > h1 {
+    font-size: x-large;
+    font-weight: 400;
+    color: var(--orange);
+}
+
+#right2 > h2 {
+    text-align: right;
+    max-width: 6em;
+    margin: 1.2em 0 1.2em 0;
+    font-size: 3.5em;
+    font-weight: 400;
+    margin-left: auto;
+}
+
+#fetchc {
+    overflow-y: scroll;
+    height: 80dvh;
+}
+
+#fetchc::-webkit-scrollbar {
+    display: none;
+}
+
+#fetchc::-moz-scrollbar {
+    display: none;
+}
+
+.cont {
+    border: 1px solid white;
+    padding: 1em;
+    margin: 1em;
+    width: 34em;
+    min-height: 5em;
+    border-radius: 0.2em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.descc {
+    width: 70%;
+    color: var(--orange);
+    margin-right: 1em;
+}
+
+.sideb {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.sideb > * {
+    border: 1px solid var(--bg);
+    background-color: var(--bg);
+    color: var(--orange);
+    padding: 0.6em 1em;
+    text-align: end;
+}
+
+#filter {
+    color: white;
+    text-align: left;
+}
+
+.fb {
+    margin: 1em;
+}
+
+h3 {
+    font-weight: 400;
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>JobHub</title>
+        <link rel="shortcut icon" href="data:" type="image/x-icon" />
+        <link rel="stylesheet" href="main.css" />
+        <link href="res/dark.css" rel="stylesheet" />
+        <script src="res/sweetalert2.min.js"></script>
+    </head>
+    <body>
+        <main>
+            <section class="page" id="page1">
+                <header id="header">
+                    <a href="/"><h1>JobHub</h1></a>
+
+                    <span>
+                        <a href="https://twitter.com/"> <img src="res/twitter.svg" /> </a>
+                        <a href="https://discord.com/"> <img src="res/discord.svg" /> </a>
+                    </span>
+                </header>
+                <section id="first">
+                    <h1>Land your dream Jobs and Internships</h1>
+                    <h2>
+                        Connecting ambitious minds with groundbreaking work. <br />
+                        Every day.
+                    </h2>
+                    <div>
+                        <a href="#page2"><button class="btn">Upload</button></a>
+                        <a href="#page3"><button class="btn">Fetch</button></a>
+                    </div>
+                </section>
+            </section>
+
+            <section class="page" id="page2">
+                <section id="left">
+                    <h1>Upload</h1>
+                    <h2>Create your unique post</h2>
+                    <div>
+                        <button class="btn" id="upload">Upload</button>
+                    </div>
+                </section>
+                <section id="right">
+                    <div>
+                        <select id="type">
+                            <option disabled selected>Job Type</option>
+                            <option>Internship</option>
+                            <option>Job</option>
+                            <option>Contract</option>
+                        </select>
+                        <input type="text" id="stipend" inputmode="numeric" placeholder="Stipend/Salary" />
+                    </div>
+
+                    <textarea id="jdesc" cols="45" rows="10" spellcheck="false" placeholder="Your Job description"></textarea>
+                </section>
+            </section>
+
+            <section class="page" id="page3">
+                <section id="left2">
+                    <div id="fetchc"></div>
+                </section>
+                <section id="right2">
+                    <h1>Fetch</h1>
+                    <h2>Craft your ideal career</h2>
+
+                    <h3 id="filter">Filter:</h3>
+                    <div>
+                        <button class="btn fb">Job</button>
+                        <button class="btn fb">Internship</button>
+                        <button class="btn fb">Contract</button>
+                    </div>
+                </section>
+            </section>
+        </main>
+
+        <script src="main.js"></script>
+    </body>
+</html>
